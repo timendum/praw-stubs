@@ -1,0 +1,6 @@
+from .base import PRAWBase as PRAWBase
+from praw.endpoints import API_PATH as API_PATH
+
+class ModNote(PRAWBase):
+    def __eq__(self, other): ...
+    def delete(self) -> None: ...

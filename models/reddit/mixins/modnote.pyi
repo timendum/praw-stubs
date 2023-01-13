@@ -1,0 +1,6 @@
+import praw
+from typing import Generator, Optional
+
+class ModNoteMixin:
+    def create_note(self, *, label: Optional[str] = ..., note: str, **other_settings) -> praw.models.ModNote: ...
+    def author_notes(self, **generator_kwargs) -> Generator['praw.models.ModNote', None, None]: ...
